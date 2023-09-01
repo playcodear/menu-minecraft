@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Minecraftia;
+  src: url(https://fonts.cdnfonts.com/s/31977/Minecraftia.woff);
+}
+body {
+  background: url("https://i.pinimg.com/originals/2a/c3/55/2ac3558ec190efe11106889d952df39b.gif") no-repeat center fixed;
+  background-size: cover;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Minecraftia;
+}
+
+img {
+  transform: translate(0%, -50%);
+}
+
+table {
+  padding: 5% 0%;
+}
+
+div.big, a.small {
+  border-style: none;
+  border-width: 5px;
+  border-color: black;
+  color: white;
+  background: rgb(128, 128, 128);
+}
+
+div.big:hover, a.small:hover {
+  color: yellow;
+  background: #6589AC;
+}
+
+div.big {
+  margin: 1% 10%;
+  padding: 1% 0%;
+  font-size: 150%;
+}
+
+a.small {
+  text-decoration: none;
+  width: 100%;
+  margin: 5% 0%;
+  padding: 1% 7.7%;
+  font-size: 150%;
+}
+
+.subtitle {
+  position: absolute;
+  color: yellow;
+  left: 45%;
+  top: -2%;
+  font-size: 150%;
+  transform: rotate(-20deg);
+  width: 100%;
+  animation: subtitle 0.25s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes subtitle {
+  0% {
+    transform: scale(0.875) rotate(-20deg);
+  }
+  100% {
+    transform: scale(1) rotate(-20deg);
+  }
+}
+@media screen and (max-width: 1070px) {
+  div.big, a.small {
+    border-width: 4px;
+  }
+
+  div.big {
+    margin: 1% 10%;
+    padding: 1% 0%;
+    font-size: 100%;
+  }
+
+  a.small {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 1% 7.7%;
+    font-size: 100%;
+  }
+
+  .subtitle {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 727px) {
+  div.big, a.small {
+    border-width: 3px;
+  }
+
+  div.big {
+    margin: 1% 10%;
+    padding: 1% 0%;
+    font-size: 75%;
+  }
+
+  a.small {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 1% 7.7%;
+    font-size: 75%;
+  }
+
+  .subtitle {
+    font-size: 75%;
+  }
+}
